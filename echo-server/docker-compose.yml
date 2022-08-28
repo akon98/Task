@@ -1,0 +1,14 @@
+version: '3'
+services:
+  flask:
+    build: .
+    container_name: echo-server-app
+    environment:
+      - FLASK_DEBUG=development
+      - PYTHONUNBUFFERED=True                   
+    restart: on-failure
+    volumes:
+      - .:/echo-server
+    ports:
+      - "5000:5000"
+    command: python server.py

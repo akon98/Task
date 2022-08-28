@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Client</title>
+	<meta http-equiv="Content type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
+</head>
+    <body>
+        <div class="box">
+            <input id="inpt" type="text">
+            <button id="sub">submit</button>
+        </div>
+        <table id="tbl"></table>
+        <script type="text/javascript" src="{{ url_for('static', filename= 'client.js') }}"></script>
+    </body>
+</html>
